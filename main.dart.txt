@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+
+
+final barColor = const Color(0xFFE71C23);
+final bgColor = const Color(0xFFDAE0E2);
+final fButtonColor = const Color(0xFF2C3335);
+void main() {
+  var myApp = MaterialApp(
+    home: Scaffold(
+      backgroundColor: bgColor,
+      floatingActionButton: FloatingActionButton(onPressed: (){},backgroundColor: fButtonColor,child: Icon(Icons.notifications,color: Color(0xFFE71C23),),),
+    appBar: AppBar(
+      title: Text("Youtub"),
+      backgroundColor: barColor,
+    ) ,
+    ),
+  );
+  runApp(myApp);
+}
